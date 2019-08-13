@@ -15,6 +15,7 @@
 		8CEA5273230349EB00F6B814 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CEA5271230349EB00F6B814 /* Main.storyboard */; };
 		8CEA5275230349ED00F6B814 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8CEA5274230349ED00F6B814 /* Assets.xcassets */; };
 		8CEA5278230349ED00F6B814 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CEA5276230349ED00F6B814 /* LaunchScreen.storyboard */; };
+		8CEA52802303520D00F6B814 /* ThryllSDK.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CEA527F2303520D00F6B814 /* ThryllSDK.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +42,7 @@
 		8CEA5274230349ED00F6B814 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8CEA5277230349ED00F6B814 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8CEA5279230349ED00F6B814 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8CEA527F2303520D00F6B814 /* ThryllSDK.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThryllSDK.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +96,7 @@
 			children = (
 				8CEA5250230349D000F6B814 /* ThryllSDK.h */,
 				8CEA5251230349D000F6B814 /* Info.plist */,
+				8CEA527F2303520D00F6B814 /* ThryllSDK.swift */,
 			);
 			path = ThryllSDK;
 			sourceTree = "<group>";
@@ -199,6 +202,7 @@
 				TargetAttributes = {
 					8CEA524C230349CF00F6B814 = {
 						CreatedOnToolsVersion = 10.2;
+						LastSwiftMigration = 1020;
 					};
 					8CEA5255230349D000F6B814 = {
 						CreatedOnToolsVersion = 10.2;
@@ -260,6 +264,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8CEA52802303520D00F6B814 /* ThryllSDK.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -435,6 +440,7 @@
 		8CEA5262230349D000F6B814 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -452,6 +458,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = rootsdigital.tech.ThryllSDK;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -460,6 +467,7 @@
 		8CEA5263230349D000F6B814 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -485,6 +493,7 @@
 		8CEA5265230349D000F6B814 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 666W9LZ7A7;
 				INFOPLIST_FILE = ThryllSDKTests/Info.plist;
@@ -503,6 +512,7 @@
 		8CEA5266230349D000F6B814 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 666W9LZ7A7;
 				INFOPLIST_FILE = ThryllSDKTests/Info.plist;
